@@ -1,62 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Logiciel</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 24px;
-      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: #1f2937;
-      background: linear-gradient(160deg, #f8fafc 0%, #e8eef6 100%);
-    }
-
-    .logo {
-      width: 100%;
-      max-width: 220px;
-      height: auto;
-      margin-bottom: 32px;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      font-weight: 600;
-      color: #0f2a4a;
-      margin-bottom: 12px;
-    }
-
-    p {
-      max-width: 520px;
-      font-size: 1.05rem;
-      line-height: 1.6;
-      color: #4b5563;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 16px;
-      font-size: 0.85rem;
-      color: #9ca3af;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logicla — Formez votre avenir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="topbar"></div>
 
-  <img class="logo" src="logo.png" alt="Logo du logiciel">
+    <main>
+        <img class="logo" id="logoImg" src="logo.png" alt="Logicla — Formez votre avenir"
+            onerror="this.style.display='none';document.getElementById('logoSvg').style.display='block';">
 
-  <h1>Bienvenue</h1>
-  <p>Votre texte de présentation ici : une courte description de votre logiciel, simple et claire.</p>
+        <svg class="logo" id="logoSvg" viewBox="120 215 2050 420" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label="Logicla — Formez votre avenir">
+            <rect x="141" y="247" width="299" height="298" rx="28" fill="#0d0670" />
+            <path
+                d="M228 404 L320 497 Q343 518 366 497 L428 440 Q440 430 440 445 L440 340 Q440 352 430 362 L358 432 L358 460 Q356 472 342 470 Z"
+                fill="#fff" />
+            <path d="M225 392 L343 322 Q358 318 358 335 L358 455 Q356 472 342 470 L228 404 Q218 396 225 392 Z"
+                fill="#3bb3f0" />
+            <text x="520" y="543" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="410"
+                fill="#3bb3f0" textLength="1445" lengthAdjust="spacingAndGlyphs">logicla</text>
 
-  <footer>&copy; 2026 Mon Logiciel. Tous droits réservés.</footer>
+            <text x="1980" y="340" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="110"
+                fill="#0d0670">®</text>
 
+            <text x="1252" y="617" font-family="Montserrat, Arial, sans-serif" font-weight="500" font-size="46"
+                fill="#0d0670" textLength="725" lengthAdjust="spacing">FORMEZ VOTRE AVENIR</text>
+        </svg>
+
+        <h1>Le réflexe <span>mathématique</span></h1>
+        <p>
+            Tous les documents, cours et vidéos créés par l'auteur, qu'ils soient publiés sur cette plateforme ou
+            ailleurs, et qu'ils portent son nom ou le logo de la marque, sont protégés par le droit d'auteur. Toute
+            utilisation ou reproduction non autorisée est strictement interdite.
+        </p>
+
+        <div class="actions">
+            <a class="btn btn-secondary"
+                href="https://wa.me/212648639295?text=Bonjour,%20je%20vous%20contacte%20depuis%20la%20plateforme%20Logicla."
+                target="_blank" class="whatsapp-btn">Contactez l'auteur</a>
+        </div>
+    </main>
+
+    <footer>&copy; 2026 Logicla. Tous droits réservés.</footer>
 </body>
+
 </html>
