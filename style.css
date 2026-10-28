@@ -1,0 +1,116 @@
+:root {
+    --navy: #0d0670;
+    --sky: #3bb3f0;
+    --sky-soft: #eaf6fe;
+    --text: #3f4468;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: #ffffff;
+}
+
+/* Bandeau décoratif discret en haut */
+.topbar {
+    height: 6px;
+    background: linear-gradient(90deg, var(--navy), var(--sky));
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 48px 24px;
+    background: radial-gradient(ellipse at 50% 0%, var(--sky-soft) 0%, #ffffff 65%);
+}
+
+.logo {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+#logoSvg {
+    display: none;
+}
+
+h1 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+h1 span {
+    color: var(--sky);
+}
+
+p {
+    max-width: 560px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 36px;
+}
+
+.actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 30px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: var(--navy);
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(13, 6, 112, .25);
+}
+
+.btn-primary:hover {
+    background: #170c94;
+}
+
+.btn-secondary {
+    background: #fff;
+    color: var(--navy);
+    border: 2px solid var(--sky);
+}
+
+.btn-secondary:hover {
+    background: var(--sky-soft);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #8a8fb0;
+    border-top: 1px solid #eef0f7;
+}
